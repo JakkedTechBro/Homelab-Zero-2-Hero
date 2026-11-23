@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🙋 Ask a question
+    url: https://github.com/JakkedTechBro/Homelab-Zero-2-Hero/discussions/categories/q-a
+    about: Stuck on a step? Ask in Discussions → Q&A. Issues are only for mistakes in the guides.
+  - name: 🖼️ Show off your lab
+    url: https://github.com/JakkedTechBro/Homelab-Zero-2-Hero/discussions/categories/show-and-tell
+    about: Built something? Post it in Show and tell.

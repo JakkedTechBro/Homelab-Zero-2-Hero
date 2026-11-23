@@ -1,0 +1,29 @@
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No question is too basic. We all started at zero.
+        ⚠️ Blur or remove passwords, API keys, tokens and public IPs before posting.
+  - type: input
+    id: episode
+    attributes:
+      label: Which episode are you on?
+      placeholder: "Ep00 · Documentation setup"
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Exact error (copy-paste)
+      render: shell

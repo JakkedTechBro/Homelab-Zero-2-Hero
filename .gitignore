@@ -1,0 +1,45 @@
+# =========================================================
+# Homelab Zero 2 Hero (PUBLIC repo) .gitignore
+# Public = anyone can read it. Secrets and real values NEVER go here.
+# =========================================================
+
+# ----- Secrets -----
+.env
+*.env
+!.env.example
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.kdbx
+id_rsa*
+id_ed25519*
+*.ovpn
+kubeconfig
+*.kubeconfig
+cloudflared/
+**/credentials*.json
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# ----- Obsidian (my editor settings aren't part of the guide) -----
+.obsidian/
+.trash/
+
+# ----- MkDocs build output (GitHub Actions builds the site) -----
+site/
+.venv/
+venv/
+__pycache__/
+
+# ----- OS junk -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- Raw video -----
+*.mp4
+*.mov
+*.MOV

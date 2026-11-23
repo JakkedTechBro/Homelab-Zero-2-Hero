@@ -1,0 +1,35 @@
+name: 🐛 Guide mistake
+description: Something in a guide is wrong, outdated or doesn't work.
+title: "[EpNN] short description"
+labels: ["guide-fix"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make the guides better!
+        ⚠️ **Don't paste passwords, API keys, tokens or your public IP.** This repo is public.
+  - type: input
+    id: episode
+    attributes:
+      label: Which episode / page?
+      placeholder: "Ep00 · Documentation setup"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: Which step, what you expected, and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Exact error (if any)
+      description: Copy-paste the text. It's formatted as code automatically.
+      render: shell
+  - type: input
+    id: setup
+    attributes:
+      label: Your setup
+      placeholder: "Windows 11, PowerShell 5.1, Git 2.x"
